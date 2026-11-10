@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Kortex Insight——香港法律資訊、簡報與研究入口。以來源為本，讓法律工作從問題開始。" />
+    <meta property="og:title" content="Kortex Insight｜香港法律情報" />
+    <meta property="og:description" content="掌握變化，查找依據。為香港法律專業工作整理資訊與研究入口。" />
+    <meta property="og:type" content="website" />
+    <title>Kortex Insight｜香港法律情報</title>
+    <link rel="icon" href="/public/kortex-insight.png" type="image/png" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script type="module" src="/src/app.js"></script>
+    <script type="module" src="/src/bilingual.js"></script>
+  </head>
+  <body>
+    <div class="prototype-note"><span class="prototype-pip"></span><span id="proto-label">互動原型</span><span class="prototype-divider">/</span><span id="proto-copy">內容與操作為示例，尚未接入真實法律檢索或 AI 服務</span><button class="note-dismiss" aria-label="關閉原型提示" title="關閉提示">×</button></div>
+    <header class="site-header" id="top">
+      <a class="brand" href="/" data-link data-route="/" aria-label="Kortex Insight"><img class="brand-logo" src="/public/kortex-insight.png" alt="Kortex Insight" width="201" height="53" /></a>
+      <nav class="main-nav" aria-label="主要導覽">
+        <a href="/insights" data-link data-route="/insights" data-nav="/insights" id="nav-insights">法律資訊</a>
+        <a href="/briefings" data-link data-route="/briefings" data-nav="/briefings" id="nav-briefings">簡報與往期</a>
+        <a href="/research" data-link data-route="/research" data-nav="/research" id="nav-research">法律研究</a>
+        <a href="/assistant" data-link data-route="/assistant" data-nav="/assistant" id="nav-assistant">AI 研究 <span class="nav-lab">BETA</span></a>
+      </nav>
+      <div class="header-actions"><a class="header-cta" href="/solutions" data-link data-route="/solutions"><span id="header-solution-label">律所方案</span><span aria-hidden="true">↗</span></a><a class="lang-switch" href="/en" data-link id="lang-toggle" lang="en" aria-label="Switch to English">EN</a><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="打開導覽選單"><span></span><span></span></button></div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="手機導覽">
+        <a href="/insights" data-link data-route="/insights"><span id="mobile-insights">法律資訊</span><span>01</span></a>
+        <a href="/briefings" data-link data-route="/briefings"><span id="mobile-briefings">簡報與往期</span><span>02</span></a>
+        <a href="/research" data-link data-route="/research"><span id="mobile-research">法律研究</span><span>03</span></a>
+        <a href="/assistant" data-link data-route="/assistant"><span id="mobile-assistant">AI 輔助研究</span><span>04</span></a>
+        <a href="/solutions" data-link data-route="/solutions"><span id="mobile-solutions">律所工作方案</span><span>05</span></a>
+      </nav>
+    </header>
+    <main id="app" tabindex="-1" aria-live="polite"></main>
+    <footer class="site-footer">
+      <div class="footer-main"><a class="brand footer-brand" href="/" data-link data-route="/" aria-label="Kortex Insight"><img class="brand-logo" src="/public/kortex-insight.png" alt="Kortex Insight" width="201" height="53" /></a><p id="footer-tagline">掌握變化，查找依據。<br />接續你的專業工作。</p><div class="footer-links"><a href="/insights" data-link data-route="/insights" id="footer-insights">法律資訊</a><a href="/briefings" data-link data-route="/briefings" id="footer-briefings">法律簡報</a><a href="/research" data-link data-route="/research" id="footer-research">法律研究</a><a href="/assistant" data-link data-route="/assistant" id="footer-assistant">AI 研究</a><a href="/solutions" data-link data-route="/solutions" id="footer-solutions">專業服務</a></div></div>
+      <div class="footer-bottom"><span id="footer-prototype">香港法律情報介面・前端展示原型</span><span id="footer-disclaimer">示例內容不構成法律意見，使用前請回到來源核查。</span><a href="#top" class="back-top" aria-label="返回頁首" id="back-top">返回頁首 ↑</a></div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
